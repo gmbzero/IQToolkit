@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="3-ExpressionImpl\**" />
+    <EmbeddedResource Remove="3-ExpressionImpl\**" />
+    <None Remove="3-ExpressionImpl\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Remotion.Linq" Version="2.2.0-alpha-001" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Job.Framework\Job.Framework.csproj" />
+  </ItemGroup>
+</Project>
